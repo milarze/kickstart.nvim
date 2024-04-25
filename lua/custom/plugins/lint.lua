@@ -7,7 +7,7 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
-        ruby = { 'ruby', 'rubocop' },
+        ruby = { 'ruby' },
         eruby = { 'erb_lint' },
         html = { 'tidy' },
       }

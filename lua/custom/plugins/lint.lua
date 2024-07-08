@@ -7,9 +7,11 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
-        ruby = { 'ruby' },
+        ruby = { 'ruby', 'standardrb' },
         eruby = { 'erb_lint' },
-        html = { 'tidy' },
+        html = { 'htmlhint' },
+        -- javascript = { 'eslint_d' },
+        yaml = { 'yamllint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
@@ -43,6 +45,17 @@ return {
       -- lint.linters_by_ft['ruby'] = nil
       -- lint.linters_by_ft['terraform'] = nil
       -- lint.linters_by_ft['text'] = nil
+
+      -- local eslint = lint.linters.eslint_d
+      -- eslint.args = {
+      --   '--no-warn-ignored',
+      --   '--format',
+      --   'json',
+      --   '--stdin-filename',
+      --   function()
+      --     return vim.api.nvim_buf_get_name(0)
+      --   end,
+      -- }
 
       -- Create autocommand which carries out the actual linting
       -- on the specified events.

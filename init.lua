@@ -593,6 +593,8 @@ require('lazy').setup({
           },
         },
         ruby_lsp = {},
+        eslint = {},
+        vuels = {},
       }
 
       -- Ensure the servers and tools above are installed

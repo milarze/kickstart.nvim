@@ -595,6 +595,8 @@ require('lazy').setup({
         ruby_lsp = {},
         eslint = {},
         vuels = {},
+        gopls = {},
+        stimulus_ls = {},
       }
 
       -- Ensure the servers and tools above are installed

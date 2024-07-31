@@ -10,7 +10,6 @@ return {
         ruby = { 'ruby', 'standardrb' },
         eruby = { 'erb_lint' },
         html = { 'htmlhint' },
-        javascript = { 'eslint_d' },
         yaml = { 'yamllint' },
       }
 

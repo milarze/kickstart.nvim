@@ -10,7 +10,6 @@ return {
         ruby = { 'ruby', 'standardrb' },
         eruby = { 'erb_lint' },
         html = { 'htmlhint' },
-        yaml = { 'yamllint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,

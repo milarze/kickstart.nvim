@@ -699,6 +699,7 @@ require('lazy').setup({
         vuels = {},
         gopls = {},
         stimulus_ls = {},
+        ocamllsp = {},
       }
 
       -- Ensure the servers and tools above are installed

@@ -711,6 +711,7 @@ require('lazy').setup({
         gopls = {},
         stimulus_ls = {},
         ocamllsp = {},
+        dart = {},
       }
 
       -- Ensure the servers and tools above are installed

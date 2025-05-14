@@ -712,6 +712,7 @@ require('lazy').setup({
         stimulus_ls = {},
         ocamllsp = {},
         dart = {},
+        terraformls = {},
       }
 
       -- Ensure the servers and tools above are installed

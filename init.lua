@@ -1047,5 +1047,10 @@ require('lazy').setup({
   },
 })
 
+-- Load custom options
+for _, file in ipairs(vim.fn.glob(vim.fn.stdpath('config') .. '/lua/custom/options/*.lua', false, true)) do
+  dofile(file)
+end
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

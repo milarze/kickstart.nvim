@@ -3,6 +3,7 @@ return {
   lazy = false,
   config = function()
     require('flutter-tools').setup {
+      flutter_lookup_cmd = 'asdf where flutter',
       decorations = {
         statusline = {
           app_version = true,
@@ -14,8 +15,19 @@ return {
         auto_open_browser = true, -- Automatically opens devtools in the browser
       },
       lsp = {
-        color = { -- show the derived colours for dart variables
-          enabled = false, -- disabling color provider that's causing errors
+        color = {
+          enabled = false,
+        },
+        settings = {
+          dart = {
+            analysisExcludedFolders = {
+              vim.fn.expand '$HOME/.pub-cache',
+              vim.fn.expand '$HOME/flutter',
+            },
+            completeFunctionCalls = true,
+            showTodos = true,
+            lineLength = 100,
+          },
         },
       },
     }

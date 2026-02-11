@@ -21,6 +21,7 @@ local servers = {
   stimulus_ls = {},
   ocamllsp = {},
   terraformls = {},
+  svelte = {},
 }
 
 return {

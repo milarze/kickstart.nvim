@@ -15,9 +15,6 @@ return {
         auto_open_browser = true, -- Automatically opens devtools in the browser
       },
       lsp = {
-        color = {
-          enabled = false,
-        },
         settings = {
           dart = {
             analysisExcludedFolders = {

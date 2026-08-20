@@ -1,4 +1,6 @@
-local manual_install = {}
+local manual_install = {
+  ocamllsp = {},
+}
 
 local servers = {
   pyright = {},
@@ -19,7 +21,6 @@ local servers = {
   vuels = {},
   gopls = {},
   stimulus_ls = {},
-  ocamllsp = {},
   terraformls = {},
   svelte = {},
 }
